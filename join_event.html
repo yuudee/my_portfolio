@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>yuudee</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #e6f0fa;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      color: #1e4b8a;
+      font-size: 2rem;
+      margin-bottom: 0.2em;
+    }
+
+    p {
+      color: #555;
+      font-size: 1rem;
+      margin-bottom: 0.00005em;
+    }
+
+    .link-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .link-button {
+      background-color: #ffffff;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      flex: 1 1 auto;
+      min-width: 80px;
+      text-align: center;
+
+      /* 追加: 画像中央配置のためのFlex指定 */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 80px; /* 高さを揃える */
+      width: 80px;
+
+      flex-shrink: 0;
+
+      /* 初期影 */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .link-button img {
+      max-height: 60%; /* ボタン内での縦サイズ調整 */
+      max-width: 60%;
+      object-fit: contain;
+    }
+
+    .link-button:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+    <h1>参加したイベント一覧</h1>
+    <h2>CTF関連</h2>
+        <p>picoCTF 2024</p>
+        <p>DIVER OSINT CTF 2024(104位)</p>
+        <p>SECCON BEGINNERS CTF 2024(513位)</p>
+        <p>WaniCTF 2024(420位)</p>
+        <p>総務省主催 全国型CTF2024 (オンライン1_44位)</p>
+    <h2>セキュリティ関係</h2>
+        <p>P3NFEST 2024 SUMMER(online参加)</p>
+        <p>FFRIセキュリティ主催(新ローレイヤー勉強会#4)</p>
+        <p>セキュリティエンジニアの知識地図 - Forkwell Library #82</p>
+        <p>P3NFEST 2025 Summer現地参加</p>
+        
+    <h2>AI関連</h2>
+    <h2>その他</h2>
+        <p>第2回：RWPL自己満LT大会</p>
+
+    <footer>&copy; 2025 yuudee</footer>
+</body>
+</html>

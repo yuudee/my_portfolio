@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>yuudee</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #e6f0fa;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      color: #1e4b8a;
+      font-size: 2rem;
+      margin-bottom: 0.2em;
+    }
+
+    p {
+      color: #555;
+      font-size: 1rem;
+      margin-bottom: 0.05em;
+    }
+
+    .link-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .link-button {
+      background-color: #ffffff;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      flex: 1 1 auto;
+      min-width: 80px;
+      text-align: center;
+
+      /* 追加: 画像中央配置のためのFlex指定 */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 80px; /* 高さを揃える */
+      width: 80px;
+
+      flex-shrink: 0;
+
+      /* 初期影 */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .link-button img {
+      max-height: 60%; /* ボタン内での縦サイズ調整 */
+      max-width: 60%;
+      object-fit: contain;
+    }
+
+    .link-button:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 style="margin-bottom: 1em;">@yuudee </h1>
+    <img src="images/profile.png" alt="profile_img" style="border-radius: 9999px;margin-bottom: 1em" width="150" height="150">
+    <p>とある企業でセキュリティ関係の仕事をしている社会人１年目です．</p>
+    <p>サーバ・ネットワーク・セキュリティ・AIなど技術全般に興味があります．</p>
+    <p style="margin-bottom: 3em;">保有資格：FP，AP，SC(登録済み)</p>
+
+    <div class="link-row">
+      <a href="https://yuudee.hatenablog.jp/" class="link-button" target="_blank">
+        <img src="images/hatenablog-logo.svg" alt="はてなブログ">
+      </a>
+      <a href="https://x.com/yuu__dee" class="link-button" target="_blank">
+        <img src="images/X_logo.png" alt="X">
+      </a>
+      <a href="https://github.com/yuudee" class="link-button" target="_blank">
+        <img src="images/github_logo.svg" alt="Github">
+      </a>
+      <a href="https://zenn.dev/yuudee" class="link-button" target="_blank">
+        <img src="images/zenn_logo.svg" alt="Zenn">
+      </a>
+      <a href="https://qiita.com/yuudee" class="link-button" target="_blank">
+        <img src="images/qiita-icon.png" alt="Qiita">
+      </a>
+      <a href="https://marshmallow-qa.com/rz4h7ys7fvojuxp?t=8o47BH&utm_medium=url_text&utm_source=promotion" class="link-button" target="_blank">
+        <img src="images/mashumaro.png" alt="マシュマロ">
+      </a>
+    </div>
+    <div style="margin-top: 2em;">
+     <a href="./join_event.html">参加したイベント一覧</a>
+    </div>
+
+    <footer>&copy; 2025 yuudee</footer>
+  </div>
+</body>
+</html>
