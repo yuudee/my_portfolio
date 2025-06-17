@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #e6f0fa;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  color: #1e4b8a;
+  font-size: 2rem;
+  margin-bottom: 0.2em;
+}
+
+p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 0.05em;
+}
+
+.link-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.link-button {
+  background-color: #ffffff;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  flex: 1 1 auto;
+  min-width: 80px;
+  text-align: center;
+
+  /* 追加: 画像中央配置のためのFlex指定 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px; /* 高さを揃える */
+  width: 80px;
+
+  flex-shrink: 0;
+
+  /* 初期影 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.link-button img {
+  max-height: 60%; /* ボタン内での縦サイズ調整 */
+  max-width: 60%;
+  object-fit: contain;
+}
+
+.link-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.8rem;
+  color: #888;
+}
